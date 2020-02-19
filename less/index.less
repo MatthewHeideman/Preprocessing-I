@@ -23,6 +23,21 @@
 	align-items: center;
 	max-width: 1500px;
 	font-family: @main-font;
+	nav{
+		width: 60%;
+		padding: 2% 0;
+		display: flex;
+		justify-content: flex-end;
+		.links{
+			display: flex;
+			width:40%;
+			justify-content: space-between;
+			a{
+				text-decoration: none;
+				color: grey;
+			}
+		}
+	}
 	h1, h2, h3, h4, h5, h6{
 		font-family: @title-font;
 	}
@@ -36,7 +51,7 @@
 			align-items: center;
 			border-bottom: solid 1px #cccccc;
 			img{
-				width: 30%;
+				width: 35%;
 				height: 25vh;
 				@media @mobile{
 					display: none;

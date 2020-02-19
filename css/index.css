@@ -24,6 +24,21 @@
   max-width: 1500px;
   font-family: 'Roboto', sans-serif;
 }
+.container nav {
+  width: 60%;
+  padding: 2% 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.container nav .links {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+.container nav .links a {
+  text-decoration: none;
+  color: grey;
+}
 .container h1,
 .container h2,
 .container h3,
@@ -47,7 +62,7 @@
   border-bottom: solid 1px #cccccc;
 }
 .container .header-container .main-header img {
-  width: 30%;
+  width: 35%;
   height: 25vh;
 }
 @media (max-width: 500px) {
