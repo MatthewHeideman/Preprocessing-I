@@ -1,1 +1,158 @@
-/* Compile your LESS file! */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'ZCOOL QingKe HuangYou';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('ZCOOL QingKe HuangYou Regular'), local('ZCOOLQingKeHuangYou-Regular'), url(https://fonts.gstatic.com/s/zcoolqingkehuangyou/v5/2Eb5L_R5IXJEWhD3AOhSvFC554MOOahI4mR4jPe4.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.container {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1500px;
+  font-family: 'Roboto', sans-serif;
+}
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+.container .header-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 53vh;
+  align-items: center;
+  background-color: #e6e6e6;
+}
+.container .header-container .main-header {
+  width: 98%;
+  align-items: center;
+  border-bottom: solid 1px #cccccc;
+}
+.container .header-container .main-header img {
+  width: 30%;
+  height: 25vh;
+}
+@media (max-width: 500px) {
+  .container .header-container .main-header img {
+    display: none;
+  }
+}
+.container .header-container .buttonDiv {
+  width: 98%;
+}
+.container .header-container .buttonDiv .button {
+  border-style: none;
+  border-radius: 3px;
+  width: 15%;
+  color: white;
+  background-color: slategrey;
+}
+.container .content {
+  width: 60%;
+  height: 41vh;
+  display: flex;
+  justify-content: space-between;
+}
+.container .content .first-box {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.container .content .first-box .smaller-text {
+  font-size: 0.8rem;
+}
+.container .content .second-box {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.container .content .second-box p {
+  margin: 0px;
+  border: 1px #e6e6e6 solid;
+  line-height: 2.5rem;
+}
+.container .work-history {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 30vh;
+  align-items: center;
+}
+.container .work-history h3 {
+  width: 100%;
+  text-align: left;
+}
+.container .work-history .table {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container .work-history .table table tbody {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  width: 100%;
+  border-spacing: 0px;
+}
+.container .work-history .table table tbody .first-row {
+  display: flex;
+  width: 100%;
+  background-color: #cccccc;
+  border: 1px black solid;
+}
+.container .work-history .table table tbody .first-row th {
+  flex-basis: 25%;
+  border: solid 1px lightgrey;
+  padding: 0.5% 7%;
+}
+.container .work-history .table table tbody .second-row {
+  display: flex;
+  width: 100%;
+}
+.container .work-history .table table tbody .second-row td {
+  flex-basis: 25%;
+  border: solid 1px lightgrey;
+  padding: 0.5% 3%;
+}
+.container .work-history .table table tbody .third-row {
+  display: flex;
+  width: 100%;
+  background-color: #cccccc;
+}
+.container .work-history .table table tbody .third-row td {
+  flex-basis: 25%;
+  border: solid 1px lightgrey;
+  padding: 0.5% 3%;
+}
+.container .work-history .table table tbody .last-row {
+  display: flex;
+  width: 100%;
+}
+.container .work-history .table table tbody .last-row td {
+  flex-basis: 25%;
+  border: solid 1px lightgrey;
+  padding: 0.5% 3%;
+}

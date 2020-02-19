@@ -1,59 +1,139 @@
-// Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap');
+@table-row: #cccccc;
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+@title-font:'ZCOOL QingKe HuangYou', cursive;
+@main-font:'Roboto', sans-serif;
+@mobile:  ~"(max-width: 500px)";
+.display(@padding:15px) {
+	padding: @padding;
+	display: flex;
+	flex-direction: column;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+.section-sizing(@height){
+	width: 60%;
+	height: @height;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
 }
-
-html, body {
-    height: 100%;
+.container{
+	.display(0px);
+	align-items: center;
+	max-width: 1500px;
+	font-family: @main-font;
+	h1, h2, h3, h4, h5, h6{
+		font-family: @title-font;
+	}
+	.header-container{
+		.display;
+		.section-sizing(53vh);
+		align-items: center;
+		background-color: #e6e6e6;
+		.main-header{
+			width: 98%;
+			align-items: center;
+			border-bottom: solid 1px #cccccc;
+			img{
+				width: 30%;
+				height: 25vh;
+				@media @mobile{
+					display: none;
+				}
+			}
+		}
+		.buttonDiv{
+			width: 98%;
+			.button{
+				border-style: none;
+			   border-radius: 3px;
+			   width: 15%;
+			   color: white;
+			   background-color: slategrey;
+			}
+	   }
+	}
+	.content{
+		.section-sizing(41vh);
+		display: flex;
+		justify-content: space-between;
+		.first-box{
+			.display(0px);
+			width: 45%;
+			.smaller-text{
+				font-size: .8rem;
+			}
+		}
+		.second-box{
+			.display(0px);
+			width: 45%;
+			p{
+				margin: 0px;
+				border: 1px #e6e6e6 solid;
+				line-height: 2.5rem;
+			}
+		}
+	}
+	.work-history{
+		.display(0px);
+		.section-sizing(30vh);
+		align-items: center;
+		h3{
+			width: 100%;
+			text-align: left;
+		}
+		.table{
+			.display(0px);
+			width: 100%;
+			table{
+				tbody{
+					.display(0px);
+					margin: 0px;
+					width: 100%;
+					border-spacing: 0px;
+					.first-row{
+						display: flex;
+						width: 100%;
+						background-color: @table-row;
+						border: 1px black solid;
+						th{
+							flex-basis: 25%;
+							border: solid 1px lightgrey;
+							padding: .5% 7%;
+						}
+					}
+					.second-row{
+						display: flex;
+						width: 100%;
+						td{
+							flex-basis: 25%;
+							border: solid 1px lightgrey;
+							padding: .5% 3%;
+						}
+					}
+					.third-row{
+						display: flex;
+						width: 100%;	
+						background-color: @table-row;
+						td{
+							flex-basis: 25%;
+							border: solid 1px lightgrey;
+							padding: .5% 3%;
+						}
+					}
+					.last-row{
+						display: flex;
+						width: 100%;
+						td{
+							flex-basis: 25%;
+							border: solid 1px lightgrey;
+							padding: .5% 3%;
+						}
+					}
+				}	
+			}
+		}
+	}
 }
 
