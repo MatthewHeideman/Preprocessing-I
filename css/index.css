@@ -70,6 +70,16 @@
     display: none;
   }
 }
+.container .header-container .main-header #main-title {
+  font-size: 50px;
+  margin: 0 auto;
+}
+.container .header-container .main-header h5 {
+  font-size: 30px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+}
 .container .header-container .buttonDiv {
   width: 98%;
 }
