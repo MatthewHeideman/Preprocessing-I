@@ -87,8 +87,11 @@
   border-style: none;
   border-radius: 3px;
   width: 15%;
-  color: white;
   background-color: slategrey;
+}
+.container .header-container .buttonDiv .button a {
+  text-decoration: none;
+  color: white;
 }
 .container .content {
   width: 60%;
@@ -184,10 +187,11 @@
   padding: 0.5% 3%;
 }
 .master {
+  padding: 0px;
   display: flex;
   flex-direction: column;
   width: 1440px;
-  margin-left: 4.5%;
+  margin-left: 4%;
   font-family: 'Titillium Web', sans-serif;
 }
 .master h1,
@@ -228,6 +232,7 @@
   border-bottom: black 1px solid;
 }
 .master .top-section .button {
+  padding: 0px;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -252,6 +257,7 @@
 }
 .master .features {
   width: 100%;
+  padding: 0px;
   display: flex;
   flex-direction: column;
 }

@@ -76,8 +76,11 @@
 				border-style: none;
 			   border-radius: 3px;
 			   width: 15%;
-			   color: white;
 			   background-color: slategrey;
+			   a{
+				   text-decoration: none;
+				   color: white;
+			   }
 			}
 	   }
 	}
@@ -167,10 +170,9 @@
 }
 
 .master{
-	display: flex;
-	flex-direction: column;
+	.display(0px);
 	width: 1440px;
-	margin-left: 4.5%;
+	margin-left: 4%;
 	font-family: @second-main-font;
 	h1, h2, h3, h4, h5, h6{
 		font-family: @secon-title-font;
@@ -204,8 +206,7 @@
 		padding-bottom: 10vh;
 		border-bottom: black 1px solid;
 		.button{
-			display:flex;
-			flex-direction: column;
+			.display(0px);
 			width: 50%;
 			justify-content: center;
 			align-items: center;
@@ -229,8 +230,7 @@
 	}
 	.features{
 		width: 100%;
-		display: flex;
-		flex-direction: column;
+		.display(0px);
 		.top{
 			display: flex;
 			justify-content: space-between;
