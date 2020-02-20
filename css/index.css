@@ -52,7 +52,7 @@
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 53vh;
+  height: 55vh;
   align-items: center;
   background-color: #e6e6e6;
 }
@@ -110,8 +110,10 @@
   display: flex;
   flex-direction: column;
   width: 45%;
+  text-align: center;
 }
 .container .content .second-box p {
+  width: 100%;
   margin: 0px;
   border: 1px #e6e6e6 solid;
   line-height: 2.5rem;
@@ -180,4 +182,130 @@
   flex-basis: 25%;
   border: solid 1px lightgrey;
   padding: 0.5% 3%;
+}
+.master {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  margin-left: 4.5%;
+  font-family: 'Titillium Web', sans-serif;
+}
+.master h1,
+.master h2,
+.master h3,
+.master h4,
+.master h5,
+.master h6 {
+  font-family: 'Bangers', cursive;
+}
+.master .header {
+  display: flex;
+  width: 100%;
+}
+.master .header .navbar {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.master .header .navbar a {
+  text-decoration: none;
+  color: grey;
+  font-size: large;
+}
+.master .header .navbar .logo {
+  width: 12%;
+}
+.master .top-section {
+  width: 100%;
+  display: flex;
+  height: 80vh;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-bottom: 10vh;
+  border-bottom: black 1px solid;
+}
+.master .top-section .button {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.master .top-section .button h1 {
+  font-size: 100px;
+}
+.master .top-section .button btn {
+  width: 35%;
+  border: 1px solid black;
+  padding: 15px;
+}
+.master .top-section .button btn a {
+  text-decoration: none;
+  color: black;
+}
+.master .top-section .code-img {
+  width: 40%;
+}
+.master .features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.master .features .top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 25vh;
+  align-items: center;
+  text-align: justify;
+}
+.master .features .top div {
+  width: 47%;
+}
+.master .features .top h1 {
+  font-size: x-large;
+}
+.master .features .top p {
+  font-size: large;
+}
+.master .features .middle-img {
+  width: 100%;
+  height: 30vh;
+}
+.master .features .bottom {
+  width: 100%;
+  display: flex;
+  height: 25vh;
+  align-items: center;
+  text-align: justify;
+  justify-content: space-between;
+  border-bottom: black 1px solid;
+}
+.master .features .bottom div {
+  width: 31%;
+}
+.master .features .bottom h1 {
+  font-size: x-large;
+}
+.master .features .bottom p {
+  font-size: large;
+}
+.master footer {
+  margin-top: 2%;
+  width: 100%;
+  height: 27vh;
+}
+.master footer h1 {
+  font-size: x-large;
+}
+.master footer p {
+  font-size: large;
+  line-height: 2rem;
+}
+.master footer .copy {
+  text-align: center;
 }
